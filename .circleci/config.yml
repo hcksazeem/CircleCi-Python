@@ -16,12 +16,12 @@ jobs:
       - run:
           name: Run Streamlit App(appnew.py)
           command: |
-            .venv/bin/activate
+            . venv/bin/activate
             timeout 5 streamlit run appnew.py --server.headless true ||[[$? -eq 124 ]]
       - run:
           name: Run OFDM Module (ofdmnew.py)
           command: |
-            .venv/bin/activate
+            . venv/bin/activate
             python ofdmnew.py
 
       - run:

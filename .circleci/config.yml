@@ -27,7 +27,7 @@ jobs:
       - run:
           name: Run Neural Network (neuralnetwotknew.py)
           command: |
-            .venv/bin/activate
+            . venv/bin/activate
             python neuralnetworknew.py
 workflows:
   ofdm-ai-pipelines:
